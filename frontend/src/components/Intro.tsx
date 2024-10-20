@@ -69,11 +69,11 @@ const Intro = () => {
   return (
     <div className="flex items-center justify-center max-h-screen pt-36">
       <div className="bg-[#8697c4]/80 backdrop-blur-lg shadow-lg rounded-lg p-8 max-w-md w-full">
-        <h1 className="text-3xl font-bold text-center mb-6">Get Paid for Your Time</h1>
+        <h1 className="text-3xl font-bold text-center mb-6">Take control of your time and be compensated</h1>
         {!minted ? (
           <>
             <h2 className="text-2xl font-semibold text-center mb-4">Register Your Address</h2>
-            <p className="text-center mb-6">So users can set up meetings with you</p>
+            <p className="text-center mb-6">This allows users to schedule meetings with you</p>
             <button
               onClick={registerAddress}
               className="w-full bg-[#3d52a0] hover:bg-[#7091e6] text-white font-bold py-3 px-6 rounded-lg transition duration-300"
@@ -84,7 +84,7 @@ const Intro = () => {
         ) : (
           <>
             <h2 className="text-2xl font-semibold text-center mb-4">Address Registered</h2>
-            <p className="text-center mb-6">You can now set up meetings</p>
+            <p className="text-center mb-6">You can now schedule meetings</p>
             <button
               onClick={() => setMinted(false)}
               className="w-full bg-[#3d52a0] hover:bg-[#7091e6] text-white font-bold py-3 px-6 rounded-lg transition duration-300"
